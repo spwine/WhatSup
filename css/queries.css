@@ -124,7 +124,7 @@
   }
 
   .section-vision {
-    margin: 9.6rem 4.8rem;
+    margin: 9.6rem 4rem;
   }
 
   .header-secondary {
@@ -290,9 +290,9 @@
     grid-template-columns: 1fr;
   }
 
-  .section-vision {
+  /* .section-vision {
     padding: 3.2rem 2rem;
-  }
+  } */
 
   .vision-form {
     display: flex;
