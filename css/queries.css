@@ -76,16 +76,8 @@
     font-size: 1.6rem;
   }
 
-  .vision-form-header {
-    padding-bottom: 0;
-  }
-
   .vision-form-box {
     width: 32rem;
-  }
-  .btn--submit {
-    margin-top: 2rem;
-    margin-left: 0;
   }
 }
 
@@ -137,10 +129,6 @@
 
   .vision-form-box {
     max-width: 36rem;
-  }
-
-  .vision-form-header {
-    margin-bottom: 1.6rem;
   }
 
   .btn--submit:link,
@@ -303,12 +291,14 @@
     padding: 4rem 3.2rem 3.2rem 3.2rem;
   }
 
-  .btn--submit {
-    margin-left: auto;
-    margin-right: auto;
+  #Partner-email {
+    width: 20rem;
+  }
 
+  .btn--submit {
     width: 35%;
     text-align: center;
+    padding: 0.8rem;
   }
 
   .grid-cta {
