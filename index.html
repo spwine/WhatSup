@@ -20,6 +20,18 @@
     <title>WhatSup - An AI-powered food metasearch</title>
   </head>
   <body>
+    <div class="cursor">
+      <div
+        class="cursor-dot"
+        style="
+          will-change: transform;
+          transform: translate3d(-50vw, -50vh, 0px) scale3d(1, 1, 1)
+            rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+          transform-style: preserve-3d;
+        "
+      ></div>
+    </div>
+
     <header class="header">
       <a href="#">
         <img class="logo" alt="WhaSup logo" src="img/logo.png" />
@@ -139,18 +151,26 @@
             </p>
             <div class="vision-form">
               <p class="vision-form-header">Be our Partner or Investor</p>
-              <form class="vision-form-box">
+              <form
+                class="vision-form-box"
+                name="vision-contact"
+                method="POST"
+                data-netlify-recaptcha="true"
+                data-netlify="true"
+              >
                 <div>
                   <label for="email"></label>
                   <input
                     id="Partner-email"
                     type="email"
                     placeholder="me@example.com"
+                    name="vision-email"
                     required
                   />
                 </div>
+                <!-- <div data-netlify-recaptcha="true"></div> -->
+                <button class="btn--submit" type="submit">Submit</button>
               </form>
-              <a href="#" class="btn btn--full btn--submit"> Submit </a>
             </div>
           </div>
           <div class="vision-img-box">
@@ -170,13 +190,20 @@
             </p>
           </div>
           <div class="cta-form-box">
-            <form class="cta-form">
+            <form
+              class="cta-form"
+              name="cta-contact"
+              method="POST"
+              data-netlify-recaptcha="true"
+              data-netlify="true"
+            >
               <div class="cta-margin-bottom">
                 <label for="full-name">Full Name</label>
                 <input
                   id="full-name"
                   type="text"
                   placeholder="John Smith"
+                  name="name"
                   required
                 />
               </div>
@@ -187,11 +214,14 @@
                   id="Demo-email"
                   type="email"
                   placeholder="me@example.com"
+                  name="cta-email"
                   required
                 />
               </div>
-
-              <button class="btn btn--form">Request for demo</button>
+              <div data-netlify-recaptcha="true"></div>
+              <button class="btn btn--form" type="submit">
+                Request for demo
+              </button>
             </form>
           </div>
         </div>
