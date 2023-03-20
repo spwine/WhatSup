@@ -107,7 +107,7 @@
   .btn:link,
   .btn:visited {
     font-size: 1.6rem;
-    padding: 1.2rem 2rem;
+    padding: 1.2rem 1.6rem;
   }
 
   .btn--outline:link,
